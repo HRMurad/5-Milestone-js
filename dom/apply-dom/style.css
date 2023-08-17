@@ -1,0 +1,19 @@
+.head-title{
+    color: tomato;
+    text-align: center;
+    background-color: aqua;
+}
+div{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+header{
+    
+}
+.body-title{
+    color: black;
+    text-align: center;
+    font-size: 26px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="head-sec">
+        <div>
+        <h1 id="head-id" class="head-title new add remove">This is Heading Title</h1>
+        </div>
+        <p id="id-p" class="add-remove add-one remove-one">this is add remove tag</p>
+        <h5 id="add-text">add inner text tag </h5>
+        <h4 class="change-html">change html tag</h4>
+    </header>
+    <main>
+        <h2 class="body-title">Hi, my name is Murad</h2>
+        <h5 id="id-title">This is ID tag</h5>
+
+        <ul class="ul-class" id="ul-id">
+            <li>abul</li>
+            <li>bablu</li>
+            <li>cabul</li>
+            <li>dabul</li>
+            <li>gabul</li>
+        </ul>
+
+        <!-- tag for dom-event -->
+
+        <!-- testing -->
+        <button onclick="console.log('hi');">click</button>
+        <!-- first one -->
+        <button onclick="clickMe()">red color</button>
+        <!-- second one -->
+        <button id="button" onclick="makeBlue">blue color</button>
+        <!-- third one -->
+        <button id="buttonTwo">green color</button>
+        <!-- final one -->
+        <button id="buttonThree">tomato</button>
+
+
+        <!-- tag for event handler -->
+        <p id="text-field">Default input text</p>
+        <input id="input-field" type="text">
+        <button id="click-button">update</button>
+
+        <br>
+        <br>
+        <!-- event handler 2 -->
+        <p id="text-field2">Default input text</p>
+        <input id="input-field2" type="text">
+        <button id="click-button2">update</button>
+
+        <br>
+        <br>
+        <!-- delete button -->
+        <p id="text-field3">Default input text</p>
+        <input id="input-field3" type="text" placeholder="type delete">
+        <button id="click-button3" disabled>update</button>
+        <br>
+        <br>
+
+        <!-- add from parent remove child itself -->
+        <h1>Add Remove</h1>
+        <ul id="ul-lists">
+            <li class="li-item">itemOne</li>
+            <li class="li-item">itemOne</li>
+            <li class="li-item">itemOne</li>
+        </ul>
+        <button id="add-btn">add</button>
+        <br>
+        <br>
+
+        <!-- increment decrement -->
+        <div style="display: grid">
+            <h1 style="color:brown;">Subhanallah</h1>
+            <p style="font-size: x-large;" id="init-value">0</p>
+            <div>
+                <button id="incr-btn">increment</button>
+                <button id="decre-btn">decrement</button>
+            </div>
+           
+        </div>
+    </main>
+    <script src="domBasicApply.js"></script>
+    <script src="domAppnedChild.js"></script>
+    <script src="domEvent.js"></script>
+    <script src="eventHandler.js"></script>
+    <script src="deleteElement.js"></script>
+    <script src="addRemove.js"></script>
+    <script src="incrementDecrement.js"></script>
+</body>
+</html>

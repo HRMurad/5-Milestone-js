@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link rel="shortcut icon" href="pic/practice.ico" type="image/x-icon">
+    <!-- ------------ -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ------------ -->
+    <title>Account Form</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-center font-semibold text-orange-700 text-3xl bg-white w-96 mx-auto mt-6 rounded-lg p-2">This is back account form</h1>
+    </header>
+    <main>
+        <section>
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto my-4">
+                <!-- deposit -->
+                <div class="bg-yellow-300 p-2 text-black">
+                    <h1>Deposit</h1>
+                    <p >$<span id="depositDisplay">5</span></p>
+                </div>
+                <!-- withdraw -->
+                <div class="bg-yellow-400 p-2 text-black">
+                    <h1>Withdraw</h1>
+                    <p>$ <span id="withdrawDisplay">00</span></p>
+                </div>
+                <!-- balance -->
+                <div class="bg-yellow-500 p-2 text-black">
+                    <h1>Balance</h1>
+                    <p>$ <span id="totalAmount">1235</span></p>
+                </div>
+            </div>
+
+            <!-- -------- -->
+
+            <div class="grid grid-cols-2 w-9/12 mx-auto gap-2">
+                <!-- deposit box -->
+                <div class="bg-cyan-400 pl-4 pb-2">
+                    <h1 class="text-black font-semibold text-2xl">Deposit</h1>
+                    <input id="depositInput" class="block my-2 p-2 w-80" type="number" placeholder="$ Amount You Want To Deposit">
+                    <button id="btnDeposit" class="btn btn-primary">Deposit</button>
+                </div>
+                <!-- withdraw box -->
+                 <div class="bg-cyan-400 pl-4 pb-2">
+                    <h1 class="text-black font-semibold text-2xl">Withdraw</h1>
+                    <input id="withdrawInput" class="block my-2 p-2 w-80" type="number" placeholder="$ Amount You Want To Withdraw">
+                    <button id="btnWithdraw" class="btn btn-primary">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--  -->
+<script src="./utilities.js"></script>
+<script src="./bankAccount.js"></script>
+</body>
+</html>
