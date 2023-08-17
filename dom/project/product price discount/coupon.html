@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  -->
+     <link rel="shortcut icon" href="pic/practice.ico" type="image/x-icon">
+    <!-- ------------ -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>coupon</title>
+</head>
+<body>
+   <main>
+    <section>
+        <div class="w-9/12 mx-auto bg-yellow-300 text-black text-center mt-4 p-2">
+            <h1 class="p-2 text-3xl">Product Price is: <span id="displayPrice">1000</span>Tk</h1>
+
+            <p id="displayPay" class="p-2 hidden">Pay Now: <span id="displayPayAmount"></span>Tk</p>
+
+            <button class="btn btn-primary" id="btnApplyDiscount">Apply 30% discount</button>
+        </div>
+    </section>
+   </main>
+    <!-- js linked up -->
+    <script src="coupon.js"></script>
+    <script src="utilitiyCoupon.js"></script>
+</body>
+</html>
