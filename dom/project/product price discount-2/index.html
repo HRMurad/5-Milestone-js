@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Product Discount Price</title>
+</head>
+<body>
+    
+<main>
+    <section>
+        <div class="container mx-auto grid grid-cols-4 mt-4">
+            <div class="card shadow-xl">
+                <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                         <h2 id="productOne" class="text-center">Shoes</h2>
+                             <p class="text-center p-4">If a dog chews shoes whose shoes does he choose?</p>
+                                <h1 class="text-2xl text-yellow-200">Price: <span id="firstPrice">10</span>$</h1>
+                                 <div class="text-center">
+                                  <button onclick="buyButtonHandler(this)" class="btn btn-primary btn small">Buy Now</button>
+                                 </div>
+                     </div>
+            </div>
+            <div class="card shadow-xl">
+                <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                         <h2 id="productTwo" class="text-center">Shirt</h2>
+                             <p class="text-center p-4">If a dog chews shoes whose shoes does he choose?</p>
+                                <h1 class="text-2xl text-yellow-200">Price: <span id="secondPrice">20$</span></h1>
+                                 <div class="text-center">
+                                  <button onclick="buyButtonHandler(this)" class="btn btn-primary btn small">Buy Now</button>
+                                 </div>
+                     </div>
+            </div>
+            <div class="card shadow-xl">
+                <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                         <h2 id="productThird" class="text-center">T-shirt</h2>
+                             <p class="text-center p-4">If a dog chews shoes whose shoes does he choose?</p>
+                                <h1 class="text-2xl text-yellow-200">Price: <span class="thirdPrice">30$</span></h1>
+                                 <div class="text-center">
+                                  <button onclick="buyButtonHandler(this)" class="btn btn-primary btn small">Buy Now</button>
+                                 </div>
+                     </div>
+            </div>
+            <!--  -->
+            <div class="grid justify-center items-center" >
+                <div class="h-56 bg-gray-400 card shadow-xl text-black text-center">
+                <h1 class="text-center text-2xl font-semibold text-yellow-300 p-4">Calculation</h1>
+                <div class="outputCalculation">
+                    <div id="outPutCalculation">
+
+                    </div>
+                    <h1>Total: <span id="totalPrice">00</span>Tk</h1>
+                    <h5>Discount: <span id="discount">00</span>Tk</h5>
+                    <p>Grand-Total: <span id="grandTotal">00</span>Tk</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+</main>
+    <!-- js lined up -->
+    <script src="dom.js"></script>
+</body>
+</html>

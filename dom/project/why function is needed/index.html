@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="pic/practice.ico" type="image/x-icon">
+    <!-- ------------ -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>function</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="text-center">
+                <!-- by using 3 same button need same result -->
+                <button class="btn btn-primary" id="oneBtn">one</button>
+
+                <button class="btn btn-secondary" id="two">two</button>
+
+                <button onclick="three()" class="btn btn-primary mb-3">three</button>
+                <!-- output -->
+                <h1 class="w-52 mx-auto h-12 text-black bg-green-400 p-2" id="output"></h1>
+            </div>
+        </section>
+        <!--  -->
+        <section>
+            <div>
+                <input id="inputId" type="text">
+                <button class="btn btn-primary" onclick="btnInput()">click</button>
+                <p id="outputId"></p>
+            </div>
+        </section>
+        <!-- use of this -->
+        <section>
+            <div class="w-9/12 mx-auto bg-gray-500 text-center">
+                <p>Hi I am p tag. Let me in Span tag </p>
+                <h1>Hi this is h1 ta</h1>
+                
+                <img src="" alt="">
+                <input type="text">
+                <button class="btn btn-secondary" onclick="inputHandler(this)">submit</button>
+                <h5 id="spanId"></h5>
+            </div>
+        </section>
+    </main>
+    <!-- js linked up -->
+    <script src="dom.js"></script>
+</body>
+</html>

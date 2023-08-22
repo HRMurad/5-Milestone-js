@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Geometric</title>
+</head>
+<body>
+    <header>
+        <div class="bg-black">
+            <h1 class="text-center text-3xl p-6">This is Geometric Calculation</h1>
+        </div>
+    </header>
+    <!--  -->
+    <main>
+        <section class="mt-6">
+            <div class="container w-11/12 mx-auto">
+                <div class="grid grid-cols-4 gap-4">
+                    <div class="flex-1">
+                    <div class="card bg-base-100 shadow-xl">
+                    <figure><img class="w-[200px] h-[120px] mx-auto" src="./images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                    <h2 class="text-center">Triangle</h2>
+                     <p class="text-center"> Area (A) = 0.5 * b * h </p>
+                     <div class="flex gap-2">
+                        <input id="inputBase" class="w-[60px] px-2" type="number" placeholder="base">
+                        <p>cm</p>
+                        <input id="inputHeight" class="w-[70px] px-2" type="number" placeholder="height">
+                        <p>cm</p>
+                     </div>
+                     <!-- output -->
+                     <p class="bg-yellow-300 w-[160px] mx-auto mt-2 text-xl text-black p-2">Area: <span id="outputAreaTriangle">0 </span>cm<sup>2</sup> </p>
+                     <!-- button -->
+                    <div class="text-center mt-4">
+                     <button onclick="triangleBtn()" class="btn btn-primary">Calculate</button>
+                     </div>
+                     </div>
+                    </div>
+                    </div>
+                <!-- ....................... -->
+                    <div class="flex-1">
+                    <div class="card bg-base-100 shadow-xl">
+                    <figure><img class="w-[200px] h-[120px] mx-auto" src="./images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                     <h2 class="text-center">Rectangle</h2>
+                     <p class="text-center"> Area (A) = w * I </p>
+                     <div class="flex gap-2">
+                        <input id="inputWight" class="w-[70px] px-2" type="number" placeholder="wight">
+                        <p>cm</p>
+                        <input id="inputLength" class="w-[70px] px-2" type="number" placeholder="length">
+                        <p>cm</p>
+                     </div>
+
+                      <!-- output -->
+                     <p class="bg-yellow-300 w-[160px] mx-auto mt-2 text-xl text-black p-2">Area: <span id="outputAreaRectangle">0 </span>cm<sup>2</sup> </p>
+                     <!-- button -->
+                    <div class="text-center mt-4">
+                     <button onclick="rectangleBtn()" class="btn btn-secondary">Calculate</button>
+                     </div>
+                     </div>
+                    </div>
+                    </div>
+                <!--  -->
+                    <div class="flex-1">
+                    <div class="card bg-base-100 shadow-xl">
+                    <figure><img class="w-[200px] h-[120px] mx-auto" src="./images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                    <h2 class="text-center">Parallelogram</h2>
+                     <p class="text-center">Area (A) = b * h</p>
+                     <div class="flex gap-2">
+                        <input id="inputParallelogramBase" class="w-[70px] px-2" type="number" placeholder="base">
+                        <p>cm</p>
+                        <input id="inputParallelogramHeight" class="w-[70px] px-2" type="number" placeholder="height">
+                        <p>cm</p>
+                     </div>
+
+                      <!-- output -->
+                     <p class="bg-yellow-300 w-[160px] mx-auto mt-2 text-xl text-black p-2">Area: <span id="outputParallelogram">0 </span>cm<sup>2</sup> </p>
+                     <!-- button -->
+                    <div class="text-center mt-4">
+                     <button onclick="parallelogramBtn()" class="btn btn-secondary">Calculate</button>
+                     </div>
+                     </div>
+                    </div>
+                    </div>
+                <!--  -->
+                    <div class="flex-1 bg-gray-500">
+                         <div class="shadow-md">
+                           <h1 class="text-center underline text-2xl text-yellow-200 mt-4">Calculator Area</h1>
+                           <!--  -->
+                           <div class="min-w-lg text-black font-semibold mx-auto " id="newCalculatorArea">
+
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--  -->
+    <footer>
+        <div>
+
+        </div>
+    </footer>
+    <!-- js linked up -->
+    <script src="utility.js"></script>
+    <script src="dom.js"></script>
+</body>
+</html>
